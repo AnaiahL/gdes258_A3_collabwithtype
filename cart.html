@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiko&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <h1 class="Zaralogo">Zara</h1>
+        </a>
+    </header>
+
+    <nav class="topnav">
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">For All</a></li>
+        </ul>
+    </nav>
+    
+<!-- Container for Cart Hero -->
+    <div id="cartherodiv" class="cartherodiv">
+        <section id="carthero" class="hero">
+            <figure id="cartheroimg" class="heroimg">
+                <img src="imgs/item-hero.png" alt="Yellow Sweater">
+            </figure>
+            <div class="iteminfo">
+                <div class="bottomalign">
+                    <h1>Yellow</h1>
+                    <p id="productidnumber">Product ID: 456849</p>
+                    <h2>33.90</h2>
+                    <div class="sizeandcolor">
+                        <p>Size M |</p>
+                        <img src="imgs/icons/colors/yellow.png">
+                    </div>
+                    <div class="quantityselection">
+                        <button>1 +</button>
+                    </div>
+                    <p>Delete</p>
+                </div>
+            </div>
+        </section>
+    </div>
+<!-- End of container for Cart Hero -->
+
+    <section id="itemgiftandshipping" class="itemgiftandshipping">
+        <div class="giftitem">
+            <p>Make your item a gift?</p>
+            <button></button>
+        </div>
+        <div class="shippingitem">
+            <p>Use previous shipping</p>
+            <button></button>
+        </div>
+    </section>
+
+    <section class="ordersummary">
+        <h2>Order Summary</h2>
+        <div class="itemssubtotal">
+            <p>Total items subtotal</p>
+            <p>33.90</p>
+        </div>
+        <div class="subtotal">
+            <h2>Subtotal</h2>
+            <h2>33.90</h2>
+        </div>
+        <div class="estimatedtax">
+            <p>Estimated Tax</p>
+            <p>CAD $2.90</p>
+        </div>
+        <div class="ordertotal">
+            <h2>Order Total</h2>
+            <h2>CAD $33.90</h2>
+        </div>
+    </section>
+
+    <div class="orderbuttons">
+        <button id="checkoutbutton">Checkout</button>
+    </div>
+
+    <div class="orderbuttons">
+        <button id="orderbutton">Continue</button>
+    </div>
+
+    <nav class="bottomnavigation">
+        <ul>
+            <li><a href="index.html"><img src="icons/home icon.svg" alt="home nav button"></a></li>
+            <li><a href="men.html"><img src="icons/search icon.svg" alt="search icon"></a></li>
+            <li><a href="#"><img src="icons/Heart.svg" alt="heart icon"></a></li>
+            <li><a href="#"><img src="icons/Profile icon.svg" alt="profile icon"></a></li>
+            <li><a href="cart.html"><img src="icons/Bag icon.svg" alt="bag icon"></a></li>
+          </ul>
+    </nav>
+
+    <figure class="zmonogram">
+        <img src="icons/Z Monogram.svg" alt = "Z monogram logo">
+    </figure>
+
+    <footer>
+        <h3>Sign Up for Our Newsletter</h3>
+        <img src="icons/Zmonogramwhite.svg" alt = "Z white monogram logo">
+        <div class="terms">
+            <p>Terms of Service</p>
+            <p>Cookies Settings</p>
+            <p>Privacy Settings</p>
+        </div>
+    </footer>
+</body>
+    <!--<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <script src="js/cart.js"></script>
+</html>

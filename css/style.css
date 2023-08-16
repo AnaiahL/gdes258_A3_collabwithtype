@@ -1,0 +1,642 @@
+/* Default Styling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 { /* difference between rem and em? */
+    font-family: 'Koulen', cursive;
+    font-size: 3rem;
+    letter-spacing: 20px;
+}
+
+@media screen and (min-width:1100px) {
+  h1 {
+      font-size: 5em;
+  }
+}
+
+h2 {
+  font-family: 'Koulen', cursive;
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
+@media screen and (min-width:1100px) {
+  h2 {
+      font-size: 2.5em;
+  }
+
+}
+
+p {
+  font-family: 'Amiko', sans-serif;
+  font-size: 1rem;
+}
+
+@media screen and (min-width:1100px) {
+  p {
+      font-size: 1.5em;
+  }
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.topnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: 'Koulen', cursive;
+  font-size: 1em;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width:1100px) {
+  .topnav ul li {
+      font-size: 1.5em;
+      padding: 30px;
+  }
+}
+
+
+.navlist {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navlist li {
+    margin-right: 20px;
+}
+
+.navlist li:last-child {
+  margin-right: 0;
+}
+
+.navlist a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.hero {
+    margin-bottom: 20px;
+}
+
+.hero p { 
+    font-family: 'Amiko', sans-serif;
+    font-size: 1rem;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.heroimg {
+    position: relative;
+    width: 100%;
+}
+
+.heroimg img {
+    width: 100%;
+}
+
+.oversettext { 
+    font-family: 'Koulen', cursive;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 10px;
+    color: white;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 300px;
+    padding: 20px; 
+}
+
+@media screen and (min-width:1100px) {
+  .oversettext {
+      font-size: 60px;
+      margin-bottom: 10px;
+      width: 500px;
+  }
+}
+
+.bottomnavigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+.bottomnavigation li {
+  display: inline-block;
+}
+  
+
+.bottomnavigation a { /* Check font size */
+  display: block;
+  text-align: center;
+  font-size: 24px; 
+  color: #fff;
+  background-color: #000000;
+  padding: 10px;
+  width: 50px; 
+}
+  
+.bottomnavigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+  
+.bottomnavigation ul {
+  display: flex;
+  justify-content: space-around; /* Distribute icons evenly */
+  background-color: #000000;
+}
+
+@media screen and (min-width:1100px) {
+  .bottomnavigation {
+      display: none;
+  }
+}   
+
+.zmonogram {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width:1100px) {
+  .zmonogram {
+    display: none;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  color: white;
+  background-color: black;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer img {
+  width: 30px;
+  padding-top: 50px;
+}
+
+footer h3 { /* Make h3 responsive */
+  font-size: 38px;
+  font-family: 'Koulen', cursive;
+}
+
+footer .terms {
+  width: 90%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 70px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Amiko', sans-serif;
+  font-size: 20px;
+}
+
+@media screen and (max-width:1100px) {
+  footer {
+      display: none;
+  }
+} 
+
+/* Men Categories Page */
+.categoriestitle { /* Check font size - if its a heading, take away font size specification */
+  display: flex;
+  justify-content: center;
+  font-family: 'Koulen', cursive;
+  font-size: 36px;
+  letter-spacing: 5px;
+  color: black;
+}
+
+.categoriescontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px;
+}
+
+.categoryitem {
+  background-color:#E9E9E9;
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.categoryitem img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.categoryitem h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 300px;
+}
+
+/* Sweaters Items Page */
+
+.itemscontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px;
+}
+
+.itemphoto {
+  position: relative;
+  display: inline-block;
+  background-color:#E9E9E9;
+  display: flex;
+  justify-content: center;
+
+}
+
+.itempng {
+  max-width: 80%;
+  height: 250px;
+  display: block;
+  padding: 30px;
+}
+
+.hearticon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  z-index: 1;
+  padding: 10px;
+}
+
+.itemdetails {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemdetails p {
+  font-size: 1.2rem;
+}
+
+.coloroptions {
+  display: flex;
+}
+
+.coloroptions p {
+  padding-left: 10px;
+
+}
+
+.coloroptions img {
+  width: 20px;
+  height: 20px;
+}
+
+.itemgridlayout h2 {
+  letter-spacing: 3px;
+}
+
+.itemgridlayout p {
+  font-family: 'Amiko', sans-serif;
+  font-size: 1.3rem;
+}
+
+/* Yellow Sweater Page */
+
+#sweatershero {
+  position: relative;
+  display: inline-block;
+}
+
+#sweatershero h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px 20px;
+}
+
+.overlayingicons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  padding: 5px;
+}
+
+.overlayingicons img {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  padding-bottom:10px;
+  padding-right: 10px;
+}
+
+.priceandcoloroptions {
+  margin: 20px;
+}
+
+.priceandcoloroptions p {
+  font-family: 'Amiko', sans-serif;
+  margin-top: 20px;
+}
+
+
+
+.priceandcolors {
+  display: flex;
+  justify-content: space-between;
+}
+
+#yellowprice {
+  letter-spacing: 4px;
+}
+
+.colors {
+  display: flex;
+  align-items: center;
+}
+
+.colors img {
+  width: 50px;
+  height: 50px;
+  padding: 2px
+}
+
+@media screen and (max-width:600px) {
+  .colors img {
+      width: 30px;
+      height: 30px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .colors img {
+      width: 20px;
+      height: 20px;
+  }
+}
+
+.productoptions {
+  margin: 20px;
+}
+
+.Quantity {
+  margin-top: 30px;
+}
+
+.materials {
+  margin-top: 30px;
+}
+
+.materials p {
+  font-family: 'Amiko', sans-serif;
+}
+
+.headingbutton {
+  font-family: 'Amiko', sans-serif;
+  font-size: 1rem;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.sizeselections button {
+  font-family: 'Amiko', sans-serif;
+  font-size: 1.2rem;
+  padding: 10px;
+  align-items: center;
+  background-color:#E9E9E9;
+  border: none;
+  color: rgb(98, 98, 98);
+}
+
+.quantityselection button {
+  font-family: 'Amiko', sans-serif;
+  font-size: 1.2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  align-items: center;
+  letter-spacing: 20px;
+  color: rgb(98, 98, 98);
+  border: none;
+}
+
+.materials p {
+  line-height: 40px;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.blackhr {
+  border: solid black 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.productavailabilityshippingreviews {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.productavailabilityshippingreviews p {
+  font-family: 'Amiko', sans-serif;
+}
+
+.productavailabilityshippingreviews img {
+  width: 12px;
+  height: 12px;
+}
+
+.productavailabilityshippingreviews p {
+  font-size: 0.7rem;
+}
+
+.instoreavailability {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shippingandreturns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Cart Page */
+#carthero {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#carthero p {
+  padding: 0;
+  font-family: 'Amiko', sans-serif;
+  font-size: 1rem;
+}
+
+.iteminfo {
+  margin-left: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.bottomalign {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#productidnumber {
+  margin-bottom: 10px;
+}
+
+.sizeandcolor {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sizeandcolor p {
+  margin: 0;
+}
+
+.sizeandcolor img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.itemgiftandshipping {
+  padding: 20px;
+  font-family: 'Amiko', sans-serif;
+  font-size: 1rem;
+}
+
+.itemgiftandshipping button {
+  width: 30px;
+  height: 30px;
+  background-color:#E9E9E9;
+  border:none;
+}
+
+.giftitem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.shippingitem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.ordersummary {
+  background-color: #E9E9E9;
+  padding: 20px;
+  font-family: 'Amiko', sans-serif;
+  font-size: 1rem;
+}
+
+.ordersummary div {
+  margin-top: 20px;
+}
+
+
+.itemssubtotal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.estimatedtax {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ordertotal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderbuttons button {
+  font-family: 'Koulen', cursive;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  border: none;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 20px;
+
+}
+
+#checkoutbutton {
+  background-color: black;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+#orderbutton {
+  background-color: rgb(225, 225, 225)
+}
+
+
+
+
+
+
+
+
